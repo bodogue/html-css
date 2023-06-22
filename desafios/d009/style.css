@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #1C6E8C;
+    text-align:center;
+}
+h1 {
+    color: #ffffff;
+    background-color: #274156;  
+}
+a {
+    color: white;
+}
+p {
+    color: #ffffff;
+}

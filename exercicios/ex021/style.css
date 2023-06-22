@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+    text-align: justify;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px 0px;
+    width: 800px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.455);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    margin: auto;
+    width: 800px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.455);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+footer > p {
+    margin: 4px;
+}
+
+
+article {
+    background-color: lightgray;
+    border: 1px solid rgb(136, 136, 136);
+    padding: 2px;
+}
+
+article > aside {
+    background-color: rgb(171, 171, 171);
+}
+
+nav {
+    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    padding: 3px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.455);
+}
+
+nav > h4 {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+nav > h4:hover {
+    text-decoration: underline;
+}
+
+p#divisa {
+    margin: 10px;
+}

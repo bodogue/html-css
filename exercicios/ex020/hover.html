@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        div {
+            width: fit-content;
+            background-color: lightgray;
+            padding: 1px;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            width: fit-content;
+            padding: 10px;
+        }
+
+        div:hover {
+            color: white;
+            text-shadow: 2px 2px 2px gray;
+        }
+
+        p.marcado {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 0px gray;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        MENU
+        <p class="marcado">Paginas</p>
+        <p><a href="pseudoclasse.html">Voltar</a></p>
+        <p><a href="links.html">Links</a></p>
+        <p class="marcado">Sites alternativos</p>
+        <p><a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+        <p><a href="https://amazon.com" target="_blank">Amazon</a></p>
+    </div>
+</body>
+</html>
