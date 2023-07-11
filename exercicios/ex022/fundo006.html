@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 95vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*
+                shorthand - background
+                ORDEM: color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             text-align: justify;
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border-radius: 15px;
@@ -28,7 +37,19 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>
+        Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>
+        Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>
+        Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>
+        Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p></p>
+        Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus saepe dolor harum a, sequi nulla cumque nobis quaerat ab fugit earum culpa? Exercitationem error minus laudantium facilis quasi eos odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi magnam, corporis, magni excepturi cupiditate alias dolores deserunt dolorem vitae, tempora quasi beatae maiores blanditiis praesentium veritatis ad harum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p></p>
+        Quas sit quasi officiis blanditiis enim laborum repellat quis impedit quod? Numquam porro similique quam unde corporis nobis ad cumque natus eius!</p>
     </main>
 </body>
 </html>
