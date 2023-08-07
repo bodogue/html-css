@@ -15,25 +15,50 @@
         }
 
         td, th {
-            border: 1px solid black;
-            width: fit-content;
-            padding: 10px 50px 10px 10px;
+            border: 1px solid black;     
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: darkgray;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(85, 85, 85);
             color: white;
         }
 
+
+        tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         .position {
-            width: 50px;
+            width: 70px;
             text-align: center;
             padding: 0px;
         }
 
         .number {
             text-align: right;
-            padding: 10px 10px 10px 50px;
+            padding: 10px;
+            width: 120px;
+        }
+
+        .porcentagem {
+            width: 70px;
+            text-align: center;
+        }
+
+        .uf {
+            padding: 10px 50px 10px 10px;
         }
     </style>
 </head>
@@ -43,6 +68,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -52,159 +78,189 @@
     -->
 
     <table>
-        <tfoot>
-            <tr>
-                <td class="position">-</td>
-                <th>Total de Habitantes</th>
-                <td class="number"><strong>203.062.512</strong></td>
-            </tr>
-        </tfoot>
+        <caption>
+            População do Brasil
+        </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <!--<th>% da População</th>-->
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop.</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="position">1</td>
-                <td>São Paulo</td>
+                <td class="uf">São Paulo</td>
                 <td class="number">44.420.459</td>
+                <td class="porcentagem">22,2%</td>
             </tr>
             <tr>
                 <td class="position">2</td>
-                <td>Minas Gerais</td>
+                <td class="uf">Minas Gerais</td>
                 <td class="number">20.538.718</td>
+                <td class="porcentagem">10,0%</td>
             </tr>
             <tr>
                 <td class="position">3</td>
-                <td>Rio de Janeiro</td>
+                <td class="uf">Rio de Janeiro</td>
                 <td class="number">16.054.524</td>
+                <td class="porcentagem">8,0%</td>
             </tr>
             <tr>
                 <td class="position">4</td>
-                <td>Bahia</td>
+                <td class="uf">Bahia</td>
                 <td class="number">14.136.417</td>
+                <td class="porcentagem">7,1%</td>
             </tr>
             <tr>
                 <td class="position">5</td>
-                <td>Paraná</td>
+                <td class="uf">Paraná</td>
                 <td class="number">11.443.208</td>
+                <td class="porcentagem">5,7%</td>
             </tr>
             <tr>
                 <td class="position">6</td>
-                <td>Rio Grande do Sul</td>
+                <td class="uf">Rio Grande do Sul</td>
                 <td class="number">10.880.506</td>
+                <td class="porcentagem">5,3%</td>
             </tr>
             <tr>
                 <td class="position">7</td>
-                <td>Pernambuco</td>
+                <td class="uf">Pernambuco</td>
                 <td class="number">9.058.155</td>
+                <td class="porcentagem">4,4%</td>
             </tr>
             <tr>
                 <td class="position">8</td>
-                <td>Ceará</td>
+                <td class="uf">Ceará</td>
                 <td class="number">8.791.688</td>
+                <td class="porcentagem">4,3%</td>
             </tr>
             <tr>
                 <td class="position">9</td>
-                <td>Pará</td>
+                <td class="uf">Pará</td>
                 <td class="number">8.116.132</td>
+                <td class="porcentagem">4,1%</td>
             </tr>
             <tr>
                 <td class="position">10</td>
-                <td>Santa Catarina</td>
+                <td class="uf">Santa Catarina</td>
                 <td class="number">7.609.601</td>
+                <td class="porcentagem">3,7%</td>
             </tr>
             <tr>
                 <td class="position">11</td>
-                <td>Goiás</td>
+                <td class="uf">Goiás</td>
                 <td class="number">7.055.228</td>
+                <td class="porcentagem">3,3%</td>
             </tr>
             <tr>
                 <td class="position">12</td>
-                <td>Maranhão</td>
+                <td class="uf">Maranhão</td>
                 <td class="number">6.775.152</td>
+                <td class="porcentagem">3,3%</td>
             </tr>
             <tr>
                 <td class="position">13</td>
-                <td>Paraíba</td>
+                <td class="uf">Paraíba</td>
                 <td class="number">3.974.495</td>
+                <td class="porcentagem">1,9%</td>
             </tr>
             <tr>
                 <td class="position">14</td>
-                <td>Amazonas</td>
+                <td class="uf">Amazonas</td>
                 <td class="number">3.941.175</td>
+                <td class="porcentagem">1,9%</td>
             </tr>
             <tr>
                 <td class="position">15</td>
-                <td>Espírito Santo</td>
+                <td class="uf">Espírito Santo</td>
                 <td class="number">3.833.486</td>
+                <td class="porcentagem">1,9%</td>
             </tr>
             <tr>
                 <td class="position">16</td>
-                <td>Mato Grosso</td>
+                <td class="uf">Mato Grosso</td>
                 <td class="number">3.658.813</td>
+                <td class="porcentagem">1,8%</td>
             </tr>
             <tr>
                 <td class="position">17</td>
-                <td>Rio Grande do Norte</td>
+                <td class="uf">Rio Grande do Norte</td>
                 <td class="number">3.302.406</td>
+                <td class="porcentagem">1,6%</td>
             </tr>
             <tr>
                 <td class="position">18</td>
-                <td>Piauí</td>
+                <td class="uf">Piauí</td>
                 <td class="number">3.269.200</td>
+                <td class="porcentagem">1,6%</td>
             </tr>
             <tr>
                 <td class="position">19</td>
-                <td>Alagoas</td>
+                <td class="uf">Alagoas</td>
                 <td class="number">3.127.511</td>
+                <td class="porcentagem">1,5%</td>
             </tr>
             <tr>
                 <td class="position">20</td>
-                <td>Distrito Federal</td>
+                <td class="uf">Distrito Federal</td>
                 <td class="number">2.817.068</td>
+                <td class="porcentagem">1,4%</td>
             </tr>
             <tr>
                 <td class="position">21</td>
-                <td>Mato Grosso do Sul</td>
+                <td class="uf">Mato Grosso do Sul</td>
                 <td class="number">2.756.700</td>
+                <td class="porcentagem">1,4%</td>
             </tr>
             <tr>
                 <td class="position">22</td>
-                <td>Sergipe</td>
+                <td class="uf">Sergipe</td>
                 <td class="number">2.209.558</td>
+                <td class="porcentagem">1,1%</td>
             </tr>
             <tr>
                 <td class="position">23</td>
-                <td>Rondônia</td>
+                <td class="uf">Rondônia</td>
                 <td class="number">1.581.016</td>
+                <td class="porcentagem">0,8%</td>
             </tr>
             <tr>
                 <td class="position">24</td>
-                <td>Tocantins</td>
+                <td class="uf">Tocantins</td>
                 <td class="number">1.511.459</td>
+                <td class="porcentagem">0,8%</td>
             </tr>
             <tr>
                 <td class="position">25</td>
-                <td>Acre</td>
+                <td class="uf">Acre</td>
                 <td class="number">830.026</td>
+                <td class="porcentagem">0,4%</td>
             </tr>
             <tr>
                 <td class="position">26</td>
-                <td>Amapá</td>
+                <td class="uf">Amapá</td>
                 <td class="number">733.508</td>
+                <td class="porcentagem">0,4%</td>
             </tr>
             <tr>
                 <td class="position">27</td>
-                <td>Roraima</td>
+                <td class="uf">Roraima</td>
                 <td class="number">636.303</td>
+                <td class="porcentagem">0,3%</td>
             </tr>
         </tbody>
-        
+        <tfoot>
+            <tr>
+                <td class="position">-</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="number"><strong>203.062.512</strong></td>
+                <th>100%</th>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
