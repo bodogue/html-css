@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 350px;
+            margin: auto;
+            border: 1px solid lightgray;
+        }
+
+        form > div > fieldset{
+            display: flex;
+            
+        }
+
+        form > div > fieldset > div {
+            padding: 10px 20px;
+            margin: auto;
+            text-align: right;
+        }
+
+        form > p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <p>
+                        <label for="inome">Nome: </label>
+                    </p>
+                    <p>
+                        <label for="iemail">E-mail: </label>
+                    </p>
+                    <p>
+                        <label for="itel">Telefone: </label>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <input type="text" name="nome" id="inome" required autocomplete="username" placeholder="username">
+                    </p>
+                    <p>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="example123@gmail.com">
+                    </p>
+                    <p>
+                        <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}\d{4}$" required autocomplete="tel" placeholder="(ddd) 0 1234 - 5678">
+                    </p>
+                    <!-- Estudar mais sobre RegEx -->
+                </div>
+            </fieldset>
+        </div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
