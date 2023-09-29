@@ -73,7 +73,8 @@ form input {
 /**/
 
 form #input-submit {
-    width: 170px;
+    min-width: 170px;
+    max-width: 200px;
     margin-top: 10px;
     background-color: #616161;
     color: white;
@@ -148,7 +149,8 @@ section h1, section h2 {
 
 form input#input-subscribe {
     margin-top: 10px;
-    width: 100px;
+    min-width: 170px;
+    max-width: 200px;
     color: white;
     background-color: #F38980;
 }
@@ -170,7 +172,8 @@ form input#input-subscribe {
 }
 
 #input-send-message {
-    width: 140px;
+    min-width: 170px;
+    max-width: 200px;
     background-color: black;
     color: white;
     border: 1px solid #525252;
