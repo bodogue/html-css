@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="arquivos/style.css">
+    <link rel="stylesheet" href="arquivos/mediaquery420.css">
+    <link rel="stylesheet" href="arquivos/mediaquery768.css">
+    <link rel="stylesheet" href="arquivos/mediaquery1366.css">
 </head>
 <body>
     <header class="container">
@@ -23,19 +26,24 @@
                 <div>Hotel</div>
                 <div>Rental</div>
             </div>
-            <form action="cadastro.php" method="post">
+            <form action="arquivos/cadastro.php" method="post" id="form1">
                 <h1>
                     Travel the world with us
                 </h1>
-
-                <label for="ifrom">From</label>
+                <div id="container-form">
+                    <div id="container-form-one-div">
+                        <label for="ifrom">From</label>
+                        <br>
+                        <input type="text" name="from" id="ifrom" placeholder="Departing from" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="ito">To</label>
+                        <br>
+                        <input type="text" name="to" id="ito" placeholder="Arriving at" required>
+                    </div>
+                </div>
                 <br>
-                <input type="text" name="from" id="ifrom" placeholder="Departing from">
-                <br>
-                <label for="ito">To</label>
-                <br>
-                <input type="text" name="to" id="ito" placeholder="Arriving at">
-
                 <input type="submit" value="Search and find dates" id="input-submit">
             </form>
         </section>
@@ -47,16 +55,16 @@
                 Up to <strong>50%</strong> discount.
             </p>
             <div class="container" id="section-imagens-um-fotos"> 
-                <div>
+                <div id="section-imagens-um-fotos-primeira-div">
                     <img src="imagens/cinqueterre.jpg" alt="cinqueterre">
                 </div>
-                <div class="container" id="section-imagens-um-fotos">
-                    <div>
-                        <img src="imagens/newyork.jpg" alt="newyork">
+                <div class="container" id="section-imagens-um-fotos-segunda-div">
+                    <div id="section-imagens-um-fotos-child">
+                        <img src="imagens/newyork.jpg" alt="newyork" id="newyork-pisa-margin">
                         <img src="imagens/sanfran.jpg" alt="sanfrancisco">
                     </div>
-                    <div>
-                        <img src="imagens/pisa.jpg" alt="pisa">
+                    <div id="section-imagens-um-fotos-child">
+                        <img src="imagens/pisa.jpg" alt="pisa" id="newyork-pisa-margin">
                         <img src="imagens/paris.jpg" alt="paris">
                     </div>
                 </div>
@@ -90,6 +98,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section-form-2">
             <h1>
                 Get the best offers first!
@@ -97,15 +106,15 @@
             <p>
                 Join our newsleter.
             </p>
-            <form action="cadastro.php" method="post">
-
+            <form action="arquivos/cadastro.php" method="post">
                 <label for="iemail">E-mail</label>
                 <br>
-                <input type="email" name="email" id="iemail" placeholder="Your Email address">
+                <input type="email" name="email" id="iemail" placeholder="Your Email address" required>
                 <br>
                 <input type="submit" value="Subscribe" id="input-subscribe">
             </form>
         </section>
+
         <section id="contact">
             <h1>
                 Contact
@@ -119,12 +128,12 @@
                 <li>Phone: +00 151515</li>
                 <li>Email: mail@mail.com</li>
             </ul>
-            <form action="cadastro.php" method="post">
-                <input type="text" name="t-name" id="" placeholder="Name">
+            <form action="arquivos/cadastro.php" method="post">
+                <input type="text" name="t-name" id="" placeholder="Name" class="contact-input" required>
                 <br>
-                <input type="email" name="t-email" id="" placeholder="Email">
+                <input type="email" name="t-email" id="" placeholder="Email" class="contact-input" required>
                 <br>
-                <input type="text" name="t-message" id="" placeholder="Message">
+                <input type="text" name="t-message" id="" placeholder="Message" class="contact-input" required>
                 <br>
                 <input type="submit" value="SEND MESSAGE" id="input-send-message">
             </form>
