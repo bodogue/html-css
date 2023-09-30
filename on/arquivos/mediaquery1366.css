@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 1366px) {
 
+    /*PRIMEIRO-FORMULARIO*/
     #section-form {
         background: black url(../imagens/london.jpg) top center no-repeat fixed;
         background-size: cover;
@@ -38,6 +39,19 @@
         padding: 12px;
     }
 
+    /*SECTIONS-IMAGENS*/
+    #img-legenda p {
+        top: 370px;
+    }
+
+    #section-imagens-um-fotos-segunda-div #img-legenda p {
+        top: 160px;
+    }
+
+    p#sanfran-paris {
+        padding-left: 10px;
+    }
+
     #section-imagens-um, #section-imagens-dois, #contact {
         max-width: 1100px;
         margin: 10px auto;
@@ -47,7 +61,7 @@
         display: flex;
         flex-direction: row;
         width: 1080px;
-        gap: 10px 15px;
+        gap: 20px 40px;
     }
 
     #section-imagens-um-fotos > div {
@@ -55,18 +69,16 @@
         flex-direction: column;
     }
 
-    #section-imagens-um-fotos-primeira-div img {
+    #section-imagens-um-fotos-primeira-div > div > img {
         width: 105%;
-        height: 110%;
     }
 
-    #section-imagens-um-fotos-segunda-div img {
-        width: 48%;
-        margin-left: 25px;
+    #section-imagens-um-fotos-segunda-div > div > div > img {
+        height: 97%;
     }
 
-    #newyork-pisa-margin {
-        margin-right: -10px;
+    #sanfran-paris-margin {
+        margin-left: 15px;
     }
 
     #section-imagens-um-fotos > div > div {
@@ -79,6 +91,7 @@
         gap: 15px;
     }
 
+    /*SEGUNDO FORMULARIO*/
     #section-form-2 {
         width: 1100px;
     }
