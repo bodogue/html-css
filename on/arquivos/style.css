@@ -36,12 +36,11 @@ header img {
     height: 40px;
 }
 
-/*diferente*/
+/*PRIMEIRO FORMULARIO*/
 #section-form {
     max-width: 320px;
     margin: 0px auto 60px auto;
 }
-/**/
 
 #div-pre-form > div {
     width: 100%;
@@ -55,25 +54,21 @@ header img {
     background-color: #E64C3C;
 }
 
-/*diferente*/
 form {
     padding: 30px 5px;
     font-family: 'Courier New', Courier, monospace;
 }
-/**/
 
 form h1 {
     font-weight: normal;
     padding-bottom: 10px;
 }
 
-/*diferente*/
 form input {
     padding: 9px;
     width: 300px;
     border: 1px solid lightgray;
 }
-/**/
 
 form #input-submit {
     min-width: 170px;
@@ -84,12 +79,11 @@ form #input-submit {
     border: none;
 }
 
-/*diferente*/
+/*SECTIONS-IMAGENS*/
 #section-imagens-um, #section-imagens-dois, #contact {
     max-width: 320px;
     margin: 10px auto;
 }
-/**/
 
 #section-imagens-um p, #section-imagens-dois p {
     margin: 15px 0px;
@@ -105,12 +99,10 @@ section h1, section h2 {
     font-weight: normal;
 }
 
-/*diferente*/
 #section-imagens-um-fotos {
     flex-direction: column;
     width: 320px;
 }
-/**/
 
 #section-imagens-um-fotos img {
     width: 100%;
@@ -130,16 +122,14 @@ section h1, section h2 {
     padding-bottom: 20px;
 }
 
-/*diferente*/
+/*SEGUNDO FORMULARIO*/
 #section-form-2 {
     width: 320px;
-    height: 235px;
     margin: auto;
     color: white;
     background-color: #616161;
-    padding: 30px 0px 0px 10px;
+    padding: 30px 10px;
 }
-/**/
 
 #section-form-2 p {
     padding-top: 20px;
@@ -158,6 +148,7 @@ form input#input-subscribe {
     background-color: #F38980;
 }
 
+/*TERCEIRO FORMULARIO*/
 #contact h1 {
     padding: 20px 0px;
 }
@@ -182,6 +173,7 @@ form input#input-subscribe {
     border: 1px solid #525252;
 }
 
+/*RODAPE*/
 footer {
     text-align: center;
     color: gray;

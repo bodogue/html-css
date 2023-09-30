@@ -87,23 +87,11 @@
         gap: 15px;
     }
 
-    #section-form-2 {
-        width: 700px;
-        height: 225px;
-        color: white;
-        background-color: #616161;
-        padding: 15px;
-    }
-
-    #section-form-2 p {
-        margin-bottom: -15px;
-    }
-
-    #section-form-2 > form {
+    #section-form-2, #section-form-2 > form {
         width: 700px;
     }
 
-    #section-form-2 > form > #iemail {
+    #section-form-2 #iemail {
         width: 96%;
     }
 

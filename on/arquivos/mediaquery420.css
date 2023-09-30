@@ -35,16 +35,10 @@
 
     #section-form-2 {
         width: 420px;
-        height: 255px;
     }
 
     #section-form-2 > form > input {
         width: 390px;
-    }
-    
-    #section-form-2 h1 {
-        font-size: 2em;
-        font-weight: normal;
     }
 
     form input#input-subscribe {
